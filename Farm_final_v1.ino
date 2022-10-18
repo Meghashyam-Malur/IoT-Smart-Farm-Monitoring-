@@ -12,7 +12,7 @@ DHT dht(DHTPIN, DHTTYPE);
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 //const char *ssid =  "SPECTRON777";     // Enter your WiFi Name
-//const char *pass =  "bingoboy777k"; // Enter your WiFi Password
+//const char *pass =  " "; // Enter your WiFi Password
 
 WiFiClient client;
 #define MQTT_SERV "io.adafruit.com"
@@ -44,8 +44,8 @@ void setup()
   Serial.println("");
   Serial.println("WiFi connected");*/
   
-  wifiMulti.addAP("SPECTRON777", "bingoboy777k");
-  wifiMulti.addAP("SPECTRON2K2K 2.4Ghz", "AmRam@279155Tango");
+  wifiMulti.addAP("SPECTRON777", " ");         // add your wifi ssid and passwords here
+  wifiMulti.addAP("SPECTRON2K2K 2.4Ghz", " "); // add your wifi ssid and passwords here
 
   Serial.println("Connecting Wifi...");
     if(wifiMulti.run() == WL_CONNECTED) {
