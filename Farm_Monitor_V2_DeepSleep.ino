@@ -11,14 +11,14 @@ DHT dht(DHTPIN, DHTTYPE);
 
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
-//const char *ssid =  "SPECTRON777";     // Enter your WiFi Name
-//const char *pass =  "bingoboy777k"; // Enter your WiFi Password
+//const char *ssid =  " ";     // Enter your WiFi Name
+//const char *pass =  " "; // Enter your WiFi Password
 
 WiFiClient client;
 #define MQTT_SERV "io.adafruit.com"
 #define MQTT_PORT 1883
-#define MQTT_NAME "Spectron777" // Your Adafruit IO Username
-#define MQTT_PASS "aio_Oktn10Whh14K51PvxptaYibrAU4b" // Adafruit IO AIO key
+#define MQTT_NAME " " // Your Adafruit IO Username
+#define MQTT_PASS " " // Adafruit IO AIO key
 
 const int moisturePin = A0;             // moisteure sensor pin
 int moisturePercentage;              //moisture reading
@@ -47,8 +47,8 @@ void setup()
   Serial.println("");
   Serial.println("WiFi connected");*/
   
-  wifiMulti.addAP("SPECTRON777", "bingoboy777k");
-  wifiMulti.addAP("SPECTRON2K2K 2.4Ghz", "AmRam@279155Tango");
+  wifiMulti.addAP(" ", " "); // add your wifi ssid and passwords here
+  wifiMulti.addAP(" ", " "); // add your wifi ssid and passwords here
 
   Serial.println("Connecting Wifi...");
     if(wifiMulti.run() == WL_CONNECTED) {
